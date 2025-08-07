@@ -18,8 +18,8 @@ import (
 	"go.uber.org/atomic"
 
 	"github.com/go-sql-driver/mysql"
-	"github.com/golang-migrate/migrate/v4/database"
 	"github.com/hashicorp/go-multierror"
+	"github.com/mudphilo/migrate/v4/database"
 )
 
 var _ database.Driver = (*Mysql)(nil) // explicit compile time type check
@@ -43,6 +43,7 @@ type Config struct {
 	DatabaseName     string
 	NoLock           bool
 	StatementTimeout time.Duration
+	IsolationLevel   sql.IsolationLevel
 }
 
 type Mysql struct {
@@ -87,6 +88,17 @@ func WithConnection(ctx context.Context, conn *sql.Conn, config *Config) (*Mysql
 
 	if len(config.MigrationsTable) == 0 {
 		config.MigrationsTable = DefaultMigrationsTable
+	}
+
+	// validate isolation level if not set use the default sql.LevelSerializable
+	if config.IsolationLevel < 0 {
+
+		config.IsolationLevel = sql.LevelSerializable
+
+	} else if config.IsolationLevel > 6 {
+
+		config.IsolationLevel = sql.LevelSerializable
+
 	}
 
 	if err := mx.ensureVersionTable(); err != nil {
@@ -355,7 +367,7 @@ func (m *Mysql) Run(migration io.Reader) error {
 }
 
 func (m *Mysql) SetVersion(version int, dirty bool) error {
-	tx, err := m.conn.BeginTx(context.Background(), &sql.TxOptions{Isolation: sql.LevelSerializable})
+	tx, err := m.conn.BeginTx(context.Background(), &sql.TxOptions{Isolation: m.config.IsolationLevel})
 	if err != nil {
 		return &database.Error{OrigErr: err, Err: "transaction start failed"}
 	}

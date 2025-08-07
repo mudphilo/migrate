@@ -11,12 +11,11 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/database"
-	"github.com/hashicorp/go-multierror"
 	"github.com/jackc/pgconn"
 	"github.com/jackc/pgerrcode"
 	"github.com/lib/pq"
+	"github.com/mudphilo/migrate/v4"
+	"github.com/mudphilo/migrate/v4/database"
 	"go.uber.org/atomic"
 )
 

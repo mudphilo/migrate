@@ -15,13 +15,12 @@ import (
 
 	"go.uber.org/atomic"
 
-	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/database"
-	"github.com/golang-migrate/migrate/v4/database/multistmt"
-	"github.com/hashicorp/go-multierror"
 	"github.com/jackc/pgerrcode"
 	"github.com/jackc/pgx/v5/pgconn"
 	_ "github.com/jackc/pgx/v5/stdlib"
+	"github.com/mudphilo/migrate/v4"
+	"github.com/mudphilo/migrate/v4/database"
+	"github.com/mudphilo/migrate/v4/database/multistmt"
 )
 
 func init() {

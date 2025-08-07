@@ -12,14 +12,12 @@ import (
 	"time"
 
 	"github.com/dhui/dktest"
-	"github.com/golang-migrate/migrate/v4"
-
 	_ "github.com/lib/pq"
 
-	dt "github.com/golang-migrate/migrate/v4/database/testing"
-	"github.com/golang-migrate/migrate/v4/dktesting"
+	dt "github.com/mudphilo/migrate/v4/database/testing"
+	"github.com/mudphilo/migrate/v4/dktesting"
 
-	_ "github.com/golang-migrate/migrate/v4/source/file"
+	_ "github.com/mudphilo/migrate/v4/source/file"
 )
 
 const defaultPort = 5433
