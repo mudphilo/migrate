@@ -9,6 +9,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/hashicorp/go-multierror"
 	"go.uber.org/atomic"
 
 	"github.com/mudphilo/migrate/v4"

@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/hashicorp/go-multierror"
 	"go.uber.org/atomic"
 
 	_ "github.com/mattn/go-sqlite3"

@@ -5,6 +5,8 @@ package testing
 
 import (
 	"testing"
+
+	"github.com/mudphilo/migrate/v4"
 )
 
 // TestMigrate runs integration-tests between the Migrate layer and database implementations.

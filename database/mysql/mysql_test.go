@@ -19,6 +19,7 @@ import (
 
 	"github.com/dhui/dktest"
 	"github.com/go-sql-driver/mysql"
+	"github.com/mudphilo/migrate/v4"
 	dt "github.com/mudphilo/migrate/v4/database/testing"
 	"github.com/mudphilo/migrate/v4/dktesting"
 	_ "github.com/mudphilo/migrate/v4/source/file"

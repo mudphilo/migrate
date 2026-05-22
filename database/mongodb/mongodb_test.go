@@ -12,6 +12,8 @@ import (
 	"strconv"
 	"testing"
 	"time"
+
+	"github.com/mudphilo/migrate/v4"
 )
 
 import (

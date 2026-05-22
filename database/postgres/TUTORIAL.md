@@ -125,6 +125,7 @@ Indexes:
 ## Optional: Run migrations within your Go app
 Here is a very simple app running migrations for the above configuration:
 ```go
+package main
 import (
 	"log"
 

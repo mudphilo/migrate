@@ -10,6 +10,7 @@ import (
 
 	_ "github.com/ClickHouse/clickhouse-go"
 	"github.com/dhui/dktest"
+	"github.com/mudphilo/migrate/v4"
 	"github.com/mudphilo/migrate/v4/database/clickhouse"
 	dt "github.com/mudphilo/migrate/v4/database/testing"
 	"github.com/mudphilo/migrate/v4/dktesting"

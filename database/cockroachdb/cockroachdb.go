@@ -10,6 +10,7 @@ import (
 	"strconv"
 
 	"github.com/cockroachdb/cockroach-go/v2/crdb"
+	"github.com/hashicorp/go-multierror"
 	"github.com/lib/pq"
 	"github.com/mudphilo/migrate/v4"
 	"github.com/mudphilo/migrate/v4/database"

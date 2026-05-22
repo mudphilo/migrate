@@ -10,6 +10,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/mudphilo/migrate/v4"
 	"github.com/mudphilo/migrate/v4/database"
 	"github.com/mudphilo/migrate/v4/source"
 )

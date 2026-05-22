@@ -9,6 +9,7 @@ import (
 	"io"
 	nurl "net/url"
 
+	"github.com/hashicorp/go-multierror"
 	"github.com/mudphilo/migrate/v4"
 	"github.com/mudphilo/migrate/v4/database"
 	_ "github.com/nakagami/firebirdsql"

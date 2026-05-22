@@ -9,6 +9,7 @@ import (
 	"testing"
 
 	"github.com/dhui/dktest"
+	"github.com/mudphilo/migrate/v4"
 	"github.com/rqlite/gorqlite"
 	"github.com/stretchr/testify/assert"
 

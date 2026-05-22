@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"strconv"
 	"testing"
+
+	"github.com/mudphilo/migrate/v4"
 )
 
 import (

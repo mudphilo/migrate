@@ -9,6 +9,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/mudphilo/migrate/v4"
 	_ "github.com/mudphilo/migrate/v4/database/stub" // TODO remove again
 	_ "github.com/mudphilo/migrate/v4/source/file"
 )

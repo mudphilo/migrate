@@ -9,6 +9,7 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/hashicorp/go-multierror"
 	"go.uber.org/atomic"
 
 	"github.com/Azure/go-autorest/autorest/adal"

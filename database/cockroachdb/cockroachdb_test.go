@@ -9,6 +9,8 @@ import (
 	"log"
 	"strings"
 	"testing"
+
+	"github.com/mudphilo/migrate/v4"
 )
 
 import (

@@ -5,6 +5,7 @@ import (
 	"os"
 	"testing"
 
+	"github.com/mudphilo/migrate/v4"
 	dt "github.com/mudphilo/migrate/v4/database/testing"
 	_ "github.com/mudphilo/migrate/v4/source/file"
 

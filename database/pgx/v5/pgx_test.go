@@ -16,6 +16,7 @@ import (
 	"testing"
 
 	"github.com/dhui/dktest"
+	"github.com/mudphilo/migrate/v4"
 
 	"github.com/mudphilo/migrate/v4/database"
 	dt "github.com/mudphilo/migrate/v4/database/testing"

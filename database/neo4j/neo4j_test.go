@@ -8,6 +8,7 @@ import (
 	"testing"
 
 	"github.com/dhui/dktest"
+	"github.com/mudphilo/migrate/v4"
 	"github.com/neo4j/neo4j-go-driver/neo4j"
 
 	dt "github.com/mudphilo/migrate/v4/database/testing"

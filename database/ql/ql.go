@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-multierror"
+	"github.com/mudphilo/migrate/v4"
 	"go.uber.org/atomic"
 
 	"github.com/mudphilo/migrate/v4/database"

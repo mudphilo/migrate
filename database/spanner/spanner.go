@@ -14,6 +14,7 @@ import (
 	"cloud.google.com/go/spanner"
 	sdb "cloud.google.com/go/spanner/admin/database/apiv1"
 	"cloud.google.com/go/spanner/spansql"
+	"github.com/mudphilo/migrate/v4"
 
 	"github.com/mudphilo/migrate/v4/database"
 
