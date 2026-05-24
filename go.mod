@@ -1,6 +1,6 @@
 module github.com/mudphilo/migrate/v4
 
-go 1.26.0
+go 1.24.0
 
 require (
 	cloud.google.com/go/spanner v1.56.0
